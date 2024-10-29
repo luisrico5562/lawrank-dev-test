@@ -1,0 +1,318 @@
+.case-results-container {
+    background-color: #000000;
+    padding-top: 14vw;
+    padding-bottom: 10vw;
+}
+
+.case-results {
+    padding-left: 6vw;
+}
+
+.case-results__h3 {
+    font: 700 3.7vw 'Tinos';
+    letter-spacing: 2.2vw;
+    margin-bottom: 8vw;
+}
+
+.case-results__h3,
+.see-all-results__a,
+.personal-injury__title,
+.personal-injury__h3,
+.personal-injury__h2 {
+    text-transform: uppercase;
+}
+
+.get-results {
+    text-align: start;
+}
+
+.get-results__h2 {
+    font: 700 14vw 'Inter';
+    line-height: 16vw;
+    letter-spacing: 1vw;
+    margin-bottom: 14vw;
+    color: transparent;
+    background-image: url('../images/WeGetResults1.png');
+    background-size: cover;
+    background-clip: text;
+}
+
+.see-all-results {
+    font: 700 4.5vw 'Lato';
+    letter-spacing: 1vw;
+    margin-bottom: 24vw;
+}
+
+.see-all-results__a {
+    text-decoration: none;
+    background-color: #000000;
+    border: 1px solid #D85172;
+    border-radius: 6px;
+    padding: 5.2vw 5vw;
+}
+
+.personal-injury-flex {
+    display: flex;
+    margin-left: 1.2vw;
+}
+
+.personal-injury {
+    max-width: 85vw;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.personal-injury-container {
+    margin: 11vw 8.5vw;
+    text-align: left;
+}
+
+.personal-injury__title,
+.personal-injury__h3 {
+    font: 700 4vw 'Tinos';
+    color: #000000;
+    line-height: 7.2vw;
+    letter-spacing: 2.5vw;
+}
+
+.personal-injury__title {
+    margin-bottom: 3.5vw;
+}
+
+.personal-injury__p {
+    font: 400 5vw 'Lato';
+    color: #000000;
+    line-height: 10vw;
+}
+
+.personal-injury__h3 {
+    margin-top: 10vw;
+    margin-bottom: 5vw;
+}
+
+.personal-injury__h2 {
+    font: 700 9.5vw 'Inter';
+    color: #D85172;
+    margin-bottom: 4vw;
+    letter-spacing: 0.5vw;
+}
+
+.arrows {
+    display: flex;
+    margin-top: 12vw;
+    gap: 10vw;
+}
+
+.arrow-button {
+    background-color: #000000;
+    border: none;
+}
+
+.arrow-button__img {
+    height: 5vw;
+}
+
+.results-image {
+    margin-bottom: -4px;
+    width: 100%;
+    background-image: url('../images/image2.png');
+    background-size: 100%;
+    height: 66vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 20vw 10vw -10vw #000000;
+}
+
+@media (min-width: 810px) {
+
+    .case-results {
+        padding-left: 2rem;
+    }
+
+    .case-results__h3 {
+        font-size: 1.2rem;
+        letter-spacing: .6rem;
+        margin-bottom: 2.7rem;
+    }
+
+    .get-results__h2 {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.35rem;
+        margin-bottom: 5rem;
+        background-image: url('../images/WeGetResults2.png');
+        margin-right: 3rem;
+    }
+
+    .see-all-results {
+        font-size: 1.1rem;
+        letter-spacing: 0.15rem;
+        margin-bottom: 6.5rem;
+    }
+
+    .see-all-results__a {
+        padding: 1.4rem 1.7rem;
+    }
+
+    .personal-injury-flex {
+        margin-left: 0.5rem;
+    }
+
+    .personal-injury {
+        max-width: 40.5rem;
+    }
+
+    .personal-injury-container {
+        margin: 6.5rem 4rem;
+        margin-bottom: 5.5rem;
+        text-align: left;
+    }
+
+    .personal-injury__title,
+    .personal-injury__h3 {
+        font-size: 1.2rem;
+        line-height: 0.5rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .personal-injury__title {
+        margin-bottom: 2.5rem;
+    }
+
+    .personal-injury__p {
+        font-size: 1.25rem;
+        line-height: 2.8rem;
+    }
+
+    .personal-injury__h3 {
+        margin-top: 4rem;
+        margin-bottom: 2.6rem;
+    }
+
+    .personal-injury__h2 {
+        font-size: 4.5rem;
+        margin-bottom: 0.7rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .arrows {
+        display: flex;
+        margin-top: 2.2rem;
+        gap: 2.2rem;
+    }
+
+    .arrow-button {
+        border: none;
+    }
+
+    .arrow-button__img {
+        height: 1.2rem;
+    }
+
+    .results-image {
+        width: 100%;
+        height: 530px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 0;
+        box-shadow: inset 0 80px 50px -10px #000000;
+    }
+}
+
+@media (min-width: 1480px) {
+
+    .case-results-container {
+        background-color: #000000;
+        padding-top: 4rem;
+        padding-bottom: 6rem;
+    }
+
+    .case-results {
+        max-width: 90rem;
+        padding-left: 9.5rem;
+    }
+
+    .case-results__h3 {
+        font-size: 1.1rem;
+        letter-spacing: .5rem;
+        margin-bottom: 2.4rem;
+    }
+
+    .get-results {
+        display: flex;
+        justify-content: space-evenly;
+        align-self: self-start;
+        gap: 18rem;
+        align-items: baseline;
+    }
+
+    .get-results__h2 {
+        font-size: 6.2rem;
+        line-height: 6.5rem;
+        letter-spacing: 0.2rem;
+        margin-bottom: 7rem;
+        background-image: url('../images/WeGetResults3.png');
+    }
+
+    .see-all-results {
+        font-size: 1rem;
+        margin-bottom: 6.5rem;
+        width: 15rem;
+        position: relative;
+    }
+
+    .see-all-results__a {
+        padding: 1.2rem;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .personal-injury-flex {
+        margin-left: 0.5rem;
+    }
+
+    .personal-injury {
+        max-width: 57rem;
+    }
+
+    .personal-injury-container {
+        margin: 6rem 6.4rem;
+        margin-bottom: 6rem;
+        text-align: left;
+    }
+
+    .personal-injury__title,
+    .personal-injury__h3 {
+        font-size: 1.1rem;
+        line-height: 0.5rem;
+        letter-spacing: 0.45rem;
+    }
+
+    .personal-injury__title {
+        margin-bottom: 2.2rem;
+    }
+
+    .personal-injury__p {
+        font-size: 1.15rem;
+        line-height: 2.6rem;
+    }
+
+    .personal-injury__h3 {
+        margin-top: 4.5rem;
+        margin-bottom: 2.6rem;
+    }
+
+    .personal-injury__h2 {
+        font-size: 4rem;
+    }
+
+    .results-image {
+        width: 100%;
+        height: 750px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 0;
+        background-position: 50% 30%;
+        box-shadow: inset 0 80px 50px -10px #000000;
+    }
+}

@@ -1,0 +1,180 @@
+.accidents-container {
+    background-color: #171B24;
+}
+
+.accidents {
+    background-image: url('../images/accidents-background1.png');
+    background-size: 58vw;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: #171B24;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 23vw;
+    padding-bottom: 25vw;
+    align-items: end;
+    gap: 10vw;
+}
+
+.accident-card {
+    margin-bottom: 12vw;
+}
+
+.svg-container {
+    width: 38%;
+    margin: auto;
+    margin-bottom: 5vw;
+
+}
+
+.accident-card__p {
+    font: 600 7vw 'Manrope';
+    opacity: 0.9;
+}
+
+/* SVG */
+
+.car-accidents-svg {
+    width: 92%;
+    height: auto;
+    margin-bottom: 20%;
+}
+
+.boat-accidents-svg {
+    width: 94%;
+    height: auto;
+    margin-bottom: 15%;
+}
+
+.dog-bites-svg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+}
+
+.motorcycle-bites-svg {
+    width: 58%;
+    height: auto;
+    margin-bottom: 12%;
+}
+
+.uber-accidents-svg {
+    width: 57%;
+    height: auto;
+    margin-bottom: 15%;
+}
+
+.bicycle-accidents-svg {
+    width: 99%;
+    height: auto;
+    margin-bottom: 26%;
+}
+
+.slip-and-fall-accidents-svg {
+    width: 72%;
+    height: auto;
+    margin-bottom: 25%;
+}
+
+.truck-accidents-svg {
+    width: 68%;
+    height: auto;
+    margin-bottom: 15%;
+}
+
+.scooter-accidents-svg {
+    width: 50%;
+    height: auto;
+    margin-bottom: 20%;
+}
+
+/* SVG */
+
+.hidden-card {
+    display: none;
+}
+
+.load-more-button {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    font: 700 3.4vw 'Manrope';
+    width: 75vw;
+    height: 18vw;
+    letter-spacing: 0.8vw;
+    margin: auto;
+    text-transform: uppercase;
+
+}
+
+@media (min-width: 810px) {
+    .accidents {
+        grid-template-columns: 1fr 1fr;
+        padding: 8.5rem 3rem;
+        padding-bottom: 3.5rem;
+        gap: 1rem;
+        background-image: none;
+    }
+
+    .accident-card {
+        margin-bottom: 5.3rem;
+    }
+
+    .svg-container {
+        width: 10rem;
+        margin-bottom: 1rem;
+    }
+
+    .accident-card__p {
+        font-size: 1.8rem;
+    }
+
+    .accident-card:nth-child(9) {
+        grid-column: 1 / -1;
+    }
+
+    .hidden-card {
+        display: block;
+    }
+
+    .load-more-button {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1480px) {
+
+    .accidents-container {
+        background-image: url('../images/accidents-background3.png');
+        background-size: 43rem;
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    .accidents {
+        width: 92rem;
+        padding: 10rem 7rem;
+        padding-bottom: 5rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: transparent;
+
+        gap: 0rem;
+    }
+
+    .accident-card {
+        margin-bottom: 4.8rem;
+    }
+
+    .accident-card:nth-child(9) {
+        grid-column: 3;
+    }
+
+    .svg-container {
+        width: 8rem;
+        margin-bottom: 1rem;
+    }
+
+    .accident-card__p {
+        font-size: 1.5rem;
+    }
+}

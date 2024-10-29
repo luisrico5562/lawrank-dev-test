@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(98, 98, 98);
+}
+
+main {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+.section-container {
+    width: 100%;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+}
