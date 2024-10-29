@@ -159,49 +159,58 @@
           </div>
         </div>
 
-        <div class="personal-injury-flex">
+        <div class="personal-injury-carousel js-carousel">
+
           <article class="personal-injury">
             <div class="personal-injury-container">
               <h2 class="personal-injury__title">Personal Injury Case</h2>
               <p class="personal-injury__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-                adipiscing .
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
+                consectetur adipiscing.
               </p>
               <h3 class="personal-injury__h3">Result</h3>
               <h2 class="personal-injury__h2">$10 Million</h2>
               <p class="personal-injury__p">Lorem ipsum dolor sit amet consectetur adipisicing</p>
             </div>
           </article>
-          <!--  
+
           <article class="personal-injury">
             <div class="personal-injury-container">
               <h2 class="personal-injury__title">Personal Injury Case</h2>
               <p class="personal-injury__p">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-                adipiscing .
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
+                consectetur adipiscing.
               </p>
               <h3 class="personal-injury__h3">Result</h3>
-              <h2 class="personal-injury__h2">$10 Million</h2>
+              <h2 class="personal-injury__h2">$20 Million</h2>
               <p class="personal-injury__p">Lorem ipsum dolor sit amet consectetur adipisicing</p>
             </div>
           </article>
-          -->
+
         </div>
 
         <div class="arrows">
-          <button class="arrow-button">
-            <img class="arrow-button__img" src="icons/arrow-left.svg" alt="Arrow left">
+          <button class="arrow-button" onclick="moveCarousel(0)">
+            <svg class="arrow-button__img" width="22" height="18" viewBox="0 0 22 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 9H2" stroke="#D85172" stroke-width="2" />
+              <path d="M9 2L2 9L9 16" stroke="#D85172" stroke-width="2" stroke-linecap="square" />
+            </svg>
+
           </button>
-          <button class="arrow-button">
-            <img class="arrow-button__img" src="icons/arrow-right.svg" alt="Arrow right">
+          <button class="arrow-button" onclick="moveCarousel(1)">
+            <svg class="arrow-button__img" width="22" height="18" viewBox="0 0 22 18" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 9H20" stroke="#D85172" stroke-width="2" />
+              <path d="M13 2L20 9L13 16" stroke="#D85172" stroke-width="2" stroke-linecap="square" />
+            </svg>
+
           </button>
         </div>
 
@@ -364,7 +373,7 @@
           <p class="accident-card__p">Motorcycle Bites</p>
         </div>
 
-        <div class="accident-card hidden-card">
+        <div class="accident-card hidden-card js-hidden-card">
           <div class="svg-container">
             <svg class="uber-accidents-svg" width="82" height="133" viewBox="0 0 82 133" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -397,7 +406,7 @@
           <p class="accident-card__p">Uber Accidents</p>
         </div>
 
-        <div class="accident-card hidden-card">
+        <div class="accident-card hidden-card js-hidden-card">
           <div class="svg-container">
             <svg class="slip-and-fall-accidents-svg" width="101" height="90" viewBox="0 0 101 90" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -421,7 +430,7 @@
           <p class="accident-card__p">Slip & Fall Accidents</p>
         </div>
 
-        <div class="accident-card hidden-card">
+        <div class="accident-card hidden-card js-hidden-card">
           <div class="svg-container">
             <svg class="bicycle-accidents-svg" width="142" height="65" viewBox="0 0 142 65" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -451,7 +460,7 @@
           <p class="accident-card__p">Bicycle Accidents</p>
         </div>
 
-        <div class="accident-card hidden-card">
+        <div class="accident-card hidden-card js-hidden-card">
           <div class="svg-container">
             <svg class="truck-accidents-svg" width="101" height="99" viewBox="0 0 101 99" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -496,7 +505,7 @@
           <p class="accident-card__p">Truck Accidents</p>
         </div>
 
-        <div class="accident-card hidden-card">
+        <div class="accident-card hidden-card js-hidden-card">
           <div class="svg-container">
             <svg class="scooter-accidents-svg" width="73" height="99" viewBox="0 0 73 99" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -541,7 +550,7 @@
           <p class="accident-card__p">Scooter Accidents</p>
         </div>
 
-        <button class="load-more-button">
+        <button class="load-more-button js-load-more-button" onclick="showCards()">
           Load More
         </button>
 
@@ -554,45 +563,67 @@
           Why choose us
         </h2>
 
-        <div class="choose-us-grid">
+        <div class="choose-us-grid-container">
+          <div class="choose-us-grid">
 
+            <article class="choose-us-article">
+              <div class="choose-us-article__border">
+                <h3 class="choose-us-article__h3">No fee unless we win your case</h3>
+                <p class="choose-us-article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a pretium
+                  leo.
+                </p>
+              </div>
 
-          <article class="choose-us-article">
-            <h3 class="choose-us-article__h3">No fee unless we win your case</h3>
-            <p class="choose-us-article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a pretium leo.
-            </p>
-          </article>
+            </article>
 
-          <article class="choose-us-article">
-            <h3 class="choose-us-article__h3">Record-setting results</h3>
-            <p class="choose-us-article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a pretium leo.
-            </p>
-          </article>
+            <article class="choose-us-article">
+              <div class="choose-us-article__border">
+                <h3 class="choose-us-article__h3">Record-setting results</h3>
+                <p class="choose-us-article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a pretium
+                  leo.
+                </p>
+              </div>
 
-          <article class="choose-us-article">
-            <h3 class="choose-us-article__h3">Record-setting results</h3>
-            <p class="choose-us-article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a pretium leo.
-            </p>
-          </article>
+            </article>
 
-          <article class="choose-us-article">
-            <h3 class="choose-us-article__h3">We’re available 24/7</h3>
-            <p class="choose-us-article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a pretium leo.
-            </p>
-          </article>
+            <article class="choose-us-article">
+              <div class="choose-us-article__border">
+                <h3 class="choose-us-article__h3">Record-setting results</h3>
+                <p class="choose-us-article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a pretium
+                  leo.
+                </p>
+              </div>
 
-          <article class="choose-us-article">
-            <h3 class="choose-us-article__h3">3 convenient locations</h3>
-            <p class="choose-us-article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a pretium leo.
-            </p>
-          </article>
+            </article>
 
-          <article class="choose-us-article">
-            <h3 class="choose-us-article__h3">3 convenient locations</h3>
-            <p class="choose-us-article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a pretium leo.
-            </p>
-          </article>
+            <article class="choose-us-article">
+              <div class="choose-us-article__border">
+                <h3 class="choose-us-article__h3">We’re available 24/7</h3>
+                <p class="choose-us-article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a pretium
+                  leo.
+                </p>
+              </div>
+            </article>
 
+            <article class="choose-us-article">
+              <div class="choose-us-article__border">
+                <h3 class="choose-us-article__h3">3 convenient locations</h3>
+                <p class="choose-us-article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a pretium
+                  leo.
+                </p>
+              </div>
+            </article>
+
+            <article class="choose-us-article">
+              <div class="choose-us-article__border">
+                <h3 class="choose-us-article__h3">3 convenient locations</h3>
+                <p class="choose-us-article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a pretium
+                  leo.
+                </p>
+              </div>
+            </article>
+
+          </div>
         </div>
 
         <a class="choose-us__a" href="">Get A Free Case Review</a>
@@ -601,6 +632,8 @@
     </section>
 
   </main>
+
+  <script src="scripts/index.js"></script>
 
 </body>
 

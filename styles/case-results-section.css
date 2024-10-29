@@ -6,6 +6,7 @@
 
 .case-results {
     padding-left: 6vw;
+    overflow-x: hidden;
 }
 
 .case-results__h3 {
@@ -51,15 +52,26 @@
     padding: 5.2vw 5vw;
 }
 
-.personal-injury-flex {
-    display: flex;
+.personal-injury-carousel {
     margin-left: 1.2vw;
+    display: flex;
+    width: 200%;
+    gap: 3%;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform .5s ease;
+}
+
+.carousel-right {
+    transform: translateX(-48%);
 }
 
 .personal-injury {
-    max-width: 85vw;
     background-color: #ffffff;
     color: #000000;
+    width: 45%;
+    height: 100%;
 }
 
 .personal-injury-container {
@@ -154,23 +166,29 @@
         padding: 1.4rem 1.7rem;
     }
 
-    .personal-injury-flex {
+    .personal-injury-carousel {
         margin-left: 0.5rem;
+        width: 200%;
+        gap: 1.5%;
+    }
+
+    .carousel-right {
+        transform: translateX(-43.5%);
     }
 
     .personal-injury {
-        max-width: 40.5rem;
+        width: 42%;
     }
 
     .personal-injury-container {
-        margin: 6.5rem 4rem;
+        margin: 6.5rem 3.8rem;
         margin-bottom: 5.5rem;
         text-align: left;
     }
 
     .personal-injury__title,
     .personal-injury__h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         line-height: 0.5rem;
         letter-spacing: 0.5rem;
     }
@@ -181,16 +199,16 @@
 
     .personal-injury__p {
         font-size: 1.25rem;
-        line-height: 2.8rem;
+        line-height: 2.7rem;
     }
 
     .personal-injury__h3 {
-        margin-top: 4rem;
+        margin-top: 3.6rem;
         margin-bottom: 2.6rem;
     }
 
     .personal-injury__h2 {
-        font-size: 4.5rem;
+        font-size: 4.2rem;
         margin-bottom: 0.7rem;
         letter-spacing: 0.3rem;
     }
@@ -267,12 +285,17 @@
         bottom: 0;
     }
 
-    .personal-injury-flex {
-        margin-left: 0.5rem;
+    .personal-injury-carousel {
+        width: 200%;
+        gap: 1.2%;
+    }
+
+    .carousel-right {
+        transform: translateX(-36.2%);
     }
 
     .personal-injury {
-        max-width: 57rem;
+        width: 35%;
     }
 
     .personal-injury-container {

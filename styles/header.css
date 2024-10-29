@@ -5,10 +5,7 @@ header {
     width: 100%;
     z-index: 10;
     text-align: center;
-    /*
-    background-color: #000000;
-    height: 7rem;
-    */
+
 }
 
 .call-us {
@@ -49,10 +46,22 @@ header {
     padding: 8vw 5vw;
     box-shadow: inset 0 15vw 10vw -10vw #000000;
     height: 0;
+    margin: 0;
+}
+
+.header-scrolled {
+    background-color: #000000;
+    transition: background-color 0.5s;
+}
+
+.header-on-top {
+    background-color: transparent;
+    transition: background-color 0.5s;
 }
 
 .lawrank-logo__svg {
     height: 5vw;
+    width: auto;
 }
 
 .lawrank-logo--mono {
@@ -70,7 +79,7 @@ header {
 .main-menu__list {
     display: flex;
     flex-direction: row;
-    font: 400 1.2rem 'Noto Sans';
+    font: 400 1.15rem 'Noto Sans';
     list-style-type: none;
     bottom: 0;
     gap: 1.7rem;
@@ -99,6 +108,10 @@ header {
     text-decoration: none;
 }
 
+.phone-number--shadowed {
+    text-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.7);
+}
+
 @media (min-width: 810px) {
     .call-us {
         height: 2.7rem;
@@ -113,7 +126,7 @@ header {
 
     .header-section {
         padding: 2rem 2rem;
-        box-shadow: inset 0 10rem 5rem -10rem #000000;
+        box-shadow: inset 0 10.5rem 2.5rem -9rem #000000;
     }
 
     .lawrank-logo__svg {
@@ -126,22 +139,21 @@ header {
 }
 
 @media (min-width: 1480px) {
-    main {
-        display: flex;
-        flex-direction: column;
-    }
 
     .call-us {
         display: none;
     }
 
     .header-section {
+        width: 100%;
+        max-width: 100rem;
         padding: 3rem 3rem;
         align-items: baseline;
-        max-width: 100rem;
         align-self: center;
-        gap: 10rem;
+        gap: 15rem;
+        height: 0.8rem;
         box-shadow: 0 0 0;
+        justify-content: space-around;
     }
 
     .lawrank-logo {

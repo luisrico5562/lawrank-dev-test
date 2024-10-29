@@ -28,32 +28,40 @@
     grid-template-columns: 1fr;
     z-index: 5;
     background-color: #000000;
-    /*gap: 0;*/
+    overflow: hidden;
 }
 
 .choose-us-article {
     background-color: #000000;
-    /*position: relative;*/
     margin: 0;
     border: none;
-    /*margin: -1px;*/
     padding: 19vw 10vw;
     justify-items: start;
     justify-content: start;
     text-align: start;
+    position: relative;
 }
 
-/*
-.choose-us-article:before {
+.choose-us-article__border::before,
+.choose-us-article__border::after {
     content: "";
     position: absolute;
-    left: 25%;
-    height: 5px;
-    width: 50%;
-     or 100px 
-    border-bottom: 3px solid magenta;
+    background-color: #ffffff;
 }
-*/
+
+.choose-us-article__border::before {
+    height: 1px;
+    width: 75%;
+    left: 12.5%;
+    top: -2px;
+}
+
+.choose-us-article__border::after {
+    width: 1px;
+    height: 65%;
+    top: 12.5%;
+    left: -2px;
+}
 
 .choose-us-article__h3 {
     font: 600 6vw 'Roboto Slab';
@@ -92,7 +100,7 @@
     }
 
     .choose-us__h2 {
-        font-size: 4.2rem;
+        font-size: 4.1rem;
         padding-bottom: 5rem;
     }
 
@@ -101,20 +109,26 @@
     }
 
     .choose-us-article {
-        padding: 11vw 6vw;
+        padding: 10vw 6.2vw;
         margin: 0;
     }
 
+    .choose-us-article__border::before {
+        height: 1px;
+        width: 65%;
+        left: 15%;
+        top: -2px;
+    }
 
     .choose-us-article__h3 {
         font-size: 3vw;
-        line-height: 4.5vw;
+        line-height: 4.8vw;
         letter-spacing: 0.1vw;
         margin-bottom: 3.5vw;
     }
 
     .choose-us-article__p {
-        font-size: 2.5vw;
+        font-size: 2.4vw;
         line-height: 4.9vw;
         opacity: 90%;
     }
@@ -149,11 +163,17 @@
 
     .choose-us-grid {
         grid-template-columns: 1fr 1fr 1fr;
-        padding: 1rem 0;
     }
 
     .choose-us-article {
         padding: 4.5rem 3.9rem;
+    }
+
+    .choose-us-article__border::after {
+        width: 1px;
+        height: 75%;
+        top: 12.5%;
+        left: -2px;
     }
 
     .choose-us-article__h3 {

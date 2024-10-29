@@ -30,3 +30,10 @@ main {
     flex-direction: column;
     width: 100%;
 }
+
+@media (min-width: 1480px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
