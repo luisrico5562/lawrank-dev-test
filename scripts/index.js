@@ -1,3 +1,26 @@
+
+const items = document.querySelectorAll('.accidents>*');
+
+document.addEventListener('DOMContentLoaded', () => {
+    items.forEach((item) => {
+        item.addEventListener('click', (e) => {
+            let itemTarget = e.currentTarget;
+
+            let itemPic = itemTarget.querySelector('.svg-container');
+            let itemText = itemTarget.querySelector('.accident-card__p');
+
+            let itemPopup = itemTarget.querySelector('.js-popup');
+
+            itemPopup.innerHTML = itemPic.innerHTML + itemText.innerHTML;
+        });
+    });
+});
+
+
+
+
+
+
 // Change header background color when scrolling down
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
@@ -47,4 +70,40 @@ function showCards() {
         loadButton.textContent = 'Load More';
         hideCards = true;
     }
+}
+
+
+// Menú móvil
+let menuMovil = document.querySelector('.hamburguer-logo');
+let hideMainMenu = true;
+menuMovil.addEventListener('click', () => {
+    
+    const mainMenu = document.querySelector('.js-main-menu');
+
+    if (hideMainMenu) {
+        mainMenu.classList.remove('show-main-menu');
+        hideMainMenu = false;
+    } else {
+        mainMenu.classList.add('show-main-menu');
+        hideMainMenu = true;
+    }
+
+});
+
+// Popup
+window.onload = generarPopups();
+
+function generarPopups() {
+
+
+
+    const popups = document.querySelectorAll('.js-popup');
+    popups.forEach((popup, i) => {
+        
+        let card = document.querySelector(`.${popup.id}`);
+
+        document.querySelector(`#${popup.id}`).innerHTML = card.innerHTML;
+        
+    });
+
 }
